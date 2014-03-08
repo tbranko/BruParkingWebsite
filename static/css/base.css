@@ -1,0 +1,57 @@
+body { 
+  background: url('/static/images/map_big_blur_resized.png') no-repeat center fixed; 
+  background-color: rgba(245, 245, 245, 0.9);
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+.center {
+	margin-left:auto;
+	margin-right:auto;
+	width: 100%;
+	max-width: 900px;
+}
+
+.home-input {
+	width: 250px;
+	height: 32px;
+}
+
+/* @Override for Bootstrap class called well */
+.well {
+	background-color: rgba(245, 245, 245, 0.4);
+	text-align: center;
+	margin-top:50px;
+}
+
+.font-flamenco {
+	font-family: 'Flamenco', cursive;
+	font-size: 30px;
+}
+
+.font-josefin-sans {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: xx-large;
+}
+
+.font-carrois-gothic {
+	font-family: 'Carrois Gothic', sans-serif;
+	font-size: 40px;
+}
+
+.col-left {
+	max-width: 600px;
+	min-width: 300px;
+}
+
+.col-right {
+	max-width: 600px;
+	min-width: 100px;
+}
+
+.lang-button {
+	width: 150px;
+	margin: 10px 0 0 0;
+}

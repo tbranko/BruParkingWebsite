@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>BruParking</title>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<!--script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+		<!-- Overridden stuff from Bootstrap and custom CSS-->
+		<link rel="stylesheet" href="/static/css/base.css" />
+		<script src="/static/js/base.js"></script>
+		
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Flamenco|Josefin+Sans|Carrois+Gothic' rel='stylesheet' type='text/css'>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container center">
+			<div class="row">
+				{% block content %}{% endblock %}
+				{% include "lang_switch.html" %}
+			</div>
+			
+		</div>
+	</body>
+</html>

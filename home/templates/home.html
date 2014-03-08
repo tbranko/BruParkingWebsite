@@ -1,25 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>BruParking</title>
-		
-		<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
-		<!-- Latest compiled and minified JavaScript -->
-		<!--script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
-		<!-- Overridden stuff from Bootstrap and custom CSS-->
-		<!--link rel="stylesheet" href="/static/css/base.css" /-->
-	</head>
-	<body>
-		<p>Your personal parking assistan for Brussels</p>
-		<p>Comming soon to Android and iPhone</p>
-		<p>Enter your email to get notified when this app is available</p>
-		
-		<form method="post">
-			
-			<input type="text" name="email" placeholder="Email" />
-			<input type="submit" class="btn btn-primary btn-small" value="Send" />
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+<div class="col-sm-8">
+	<div class="well col-left">
+		<p class="font-carrois-gothic">{% trans "Your personal parking assistant for city of Brussels" %}</p>
+		<p class="font-carrois-gothic">{% trans "Comming soon to Android and iPhone" %}</p>
+	</div>
+	<div class="well col-left">
+		<p class="font-carrois-gothic">{% trans "Enter your email to get notified when this app is available" %}</p>
+		<form method="post" action="." class="form-inline">
+			{% csrf_token %}
+			{{ form.email }}
+				<input type="submit" class="btn btn-primary btn-small" value="Send" />
 		</form>
-	</body>
-</html>
+	</div>	
+</div>
+
+{% endblock content %}

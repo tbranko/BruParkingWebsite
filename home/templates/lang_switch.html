@@ -1,0 +1,12 @@
+<div class="col-sm-4">
+	<div class="well col-right">	
+		{% for lang in LANGUAGES %}
+		<form id="lang_form" action="/i18n/setlang/" method="post">
+			{% csrf_token %}
+			<input name="next" type="hidden" value="/" />
+			<input name="language" type="hidden" value="{{ lang.0 }}" />
+			<input type="submit" class="btn btn-primary lang-button" value="{{ lang.1 }}" />
+		</form>
+		{% endfor %}
+	</div>
+</div>
