@@ -10,6 +10,7 @@
 		<!--script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
 		<!-- Overridden stuff from Bootstrap and custom CSS-->
 		<link rel="stylesheet" href="/static/css/base.css" />
+		<link rel="stylesheet" href="/static/css/bootstrap-select/bootstrap-select.css" />
 		<script src="/static/js/base.js"></script>
 		
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -18,12 +19,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
+		{% include "header.html" %}
+		
 		<div class="container center">
-			<div class="row">
-				{% block content %}{% endblock %}
-				{% include "lang_switch.html" %}
-			</div>
-			
+			{% block content %}{% endblock %}
 		</div>
+		
+		{% include "footer.html" %}
 	</body>
 </html>

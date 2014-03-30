@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """
 Django settings for BruParkingWebsite project.
 
@@ -62,8 +64,8 @@ DATABASES = {
     'default': {
         'NAME': 'bruparking_website',
         'ENGINE': 'mysql.connector.django',
-        'USER': 'root',
-        #'PASSWORD': '',
+        'USER': 'branko',
+        'PASSWORD': 'hardcore37',
         'OPTIONS': {
           'autocommit': True,
         },

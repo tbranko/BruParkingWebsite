@@ -2,19 +2,17 @@
 {% load i18n %}
 {% block content %}
 
-<div class="col-sm-8">
-	<div class="well col-left">
-		<p class="font-carrois-gothic">{% trans "Your personal parking assistant for city of Brussels" %}</p>
-		<p class="font-carrois-gothic">{% trans "Comming soon to Android and iPhone" %}</p>
-	</div>
-	<div class="well col-left">
-		<p class="font-carrois-gothic">{% trans "Enter your email to get notified when this app is available" %}</p>
-		<form method="post" action="." class="form-inline">
-			{% csrf_token %}
-			{{ form.email }}
-				<input type="submit" class="btn btn-primary btn-small" value="Send" />
-		</form>
-	</div>	
+<div class="well">
+	<p class="font-carrois-gothic">{% trans "Your personal parking assistant for city of Brussels" %}</p>
+	<p class="font-carrois-gothic">{% trans "Comming soon to Android and iPhone" %}</p>
+</div>
+<div class="well">
+	<p class="font-carrois-gothic">{% trans "Enter your email to get notified when this app is available" %}</p>
+	<form method="post" action="." class="form-inline">
+		{% csrf_token %}
+		{{ form.email }}
+			<input type="submit" class="btn btn-primary btn-small" value="Send" />
+	</form>
 </div>
 
 {% endblock content %}

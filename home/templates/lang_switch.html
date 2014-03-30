@@ -1,12 +1,12 @@
-<div class="col-sm-4">
-	<div class="well col-right">	
-		{% for lang in LANGUAGES %}
-		<form id="lang_form" action="/i18n/setlang/" method="post">
-			{% csrf_token %}
-			<input name="next" type="hidden" value="/" />
-			<input name="language" type="hidden" value="{{ lang.0 }}" />
-			<input type="submit" class="btn btn-primary lang-button" value="{{ lang.1 }}" />
-		</form>
-		{% endfor %}
-	</div>
+<div class="lang-form">
+	<form id="lang_form" action="/i18n/setlang/" method="post">
+		{% csrf_token %}
+		<input name="next" type="hidden" value="/" />
+		<select class="selectpicker" name="language" onchange='this.form.submit()'>
+			{% for lang in LANGUAGES %}
+				<option value="{{ lang.0 }}" {% if LANGUAGE_CODE == lang.0 %} selected{% endif %} >{{ lang.1 }}</option>
+			{% endfor %}
+		</select>
+		<noscript><input type="submit" value="Submit"></noscript>
+	</form>
 </div>
