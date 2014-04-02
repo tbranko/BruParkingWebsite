@@ -10,10 +10,13 @@
 	<p class="font-carrois-gothic">{% trans "Enter your email to get notified when this app is available" %}</p>
 	<form method="post" action="." class="form-inline">
 		{% csrf_token %}
-		{{ form.email.errors }}
-		{{ form.email }}
 		
+		<div class="form-group {% if form.email.errors %}has-error{% endif %}">
+		<p class="form-error">{{ form.email.errors.as_text }}</p>
+		
+		{{ form.email }}
 			<input type="submit" class="btn btn-primary btn-small" value="Send" />
+		</div>
 	</form>
 </div>
 

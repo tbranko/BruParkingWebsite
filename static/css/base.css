@@ -98,3 +98,9 @@ body {
 	width: 100%;
 	max-width: 460px;
 }
+
+.form-error {
+	text-align: left;
+	padding-left: 128px;
+	color: #b94a48;
+}
