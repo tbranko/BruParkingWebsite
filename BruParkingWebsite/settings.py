@@ -52,6 +52,8 @@ MIDDLEWARE_CLASSES = (
     
 )
 
+X_FRAME_OPTIONS = 'GO FOR IT'
+
 ROOT_URLCONF = 'BruParkingWebsite.urls'
 
 WSGI_APPLICATION = 'BruParkingWebsite.wsgi.application'
