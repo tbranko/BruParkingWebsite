@@ -7,14 +7,7 @@
 	<p class="font-carrois-gothic">{% trans "Comming soon to Android and iPhone" %}</p>
 </div>
 <div class="well">
-	<p class="font-carrois-gothic">{% trans "Enter your email to get notified when this app is available" %}</p>
-	<form method="post" action="." class="form-inline">
-		{% csrf_token %}
-		{{ form.email.errors }}
-		{{ form.email }}
-		
-			<input type="submit" class="btn btn-primary btn-small" value="Send" />
-	</form>
+	<p class="font-carrois-gothic">{% trans "Thank you, you will be notified as soon as the application is available" %}</p>
 </div>
 
 {% endblock content %}

@@ -11,38 +11,48 @@ class NotificationEmailForm(forms.ModelForm):
 		fields = ['email', 'ip']
 		widgets = { 'email': forms.TextInput(attrs={'class':'form-control home-input', 'placeholder':'Email'}) }
 		
-	def clean(self):
-		super(NotificationEmailForm, self).clean() #if necessary
-		if 'email' in self._errors:
-			# Get "uncleaned" data
-			data_email = self.data["email"]
-			# Strip spaces
-			data_email.replace(" ", "")
-			if data_email == "":
-				raise forms.ValidationError(('Missing email'), code='missing_email')
-			else:
-				del self.data["email"]
-		return self.cleaned_data
-	
-	def clean_email(self):
-		email = self.cleaned_data['email']
-		email_from_db = NotificationEmail.objects.get(email=email)
-		if (email_from_db):
-			pass
-	
-	def full_clean(self):
-		super(NotificationEmailForm, self).full_clean()
-		email = self.data['email'] or ''
-		email_from_db = NotificationEmail.objects.get(email=email)
-		if (email_from_db and self._errors['email']):
-			del self._errors['email']
-		
-		return self.cleaned_data
-	
-	def save(self):
-		email = self.data['email']
-		email_from_db = NotificationEmail.objects.get(email=email)
-		if (email_from_db):
-			pass
-		else:
-			super(NotificationEmailForm, self).save()
+# 	def clean(self):
+# 		super(NotificationEmailForm, self).clean() #if necessary
+# 		if 'email' in self._errors:
+# 			# Get "uncleaned" data
+# 			data_email = self.data["email"]
+# 			# Strip spaces
+# 			data_email.replace(" ", "")
+# 			if data_email == "":
+# 				raise forms.ValidationError(('Missing email'), code='missing_email')
+# 			else:
+# 				del self.data["email"]
+# 		return self.cleaned_data
+# # 	
+# 	def clean_email(self):
+# 		email = self.cleaned_data['email']
+# 		
+# 		try:
+# 			email_from_db = NotificationEmail.objects.get(email=email)
+# 			if (email_from_db):
+# 				pass
+# 		except: 
+# 			pass
+# 	
+# 	def full_clean(self):
+# 		super(NotificationEmailForm, self).full_clean()
+# # 		if (self.data['email']):
+# # 			email = self.data['email'] or ''
+# 		
+# 		if (self._errors['email']):
+# 			del self._errors['email']
+# 		
+# 		return self.cleaned_data
+# 	
+# 	def save(self):
+# 		
+# 		try:
+# 			email = self.data['email']
+# 			
+# 			try:
+# 				email_from_db = NotificationEmail.objects.get(email=email)
+# 				return email_from_db
+# 			except:
+# 				return super(NotificationEmailForm, self).save()
+# 		except:
+# 			pass

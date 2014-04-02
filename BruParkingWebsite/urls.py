@@ -6,6 +6,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-	url(r'^$', NotificationEmailView.as_view()),
+	url(r'^thank-you/$', TemplateView.as_view(template_name='thank_you.html')),
 	url(r'^i18n/', include('django.conf.urls.i18n')),
+	url(r'^$', NotificationEmailView.as_view()),
 )

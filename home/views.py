@@ -5,7 +5,7 @@ from .models import NotificationEmail
 class NotificationEmailView(CreateView):
 	template_name = 'home.html'
 	form_class = NotificationEmailForm
-	success_url = '/'
+	success_url = '/thank-you'
 	model = NotificationEmail
 	
 	def get_form_kwargs(self):
