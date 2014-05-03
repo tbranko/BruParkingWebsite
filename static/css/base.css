@@ -1,5 +1,5 @@
 body { 
-  background: url('/static/images/map_big_blur_resized.png') no-repeat center fixed; 
+  background: url('/static/images/map_v2_dark_blur_resize.jpg') no-repeat center fixed; 
   background-color: rgba(245, 245, 245, 0.9);
   /*-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -39,6 +39,11 @@ body {
 .font-carrois-gothic {
 	font-family: 'Carrois Gothic', sans-serif;
 	font-size: 40px;
+}
+
+p { 
+	color: white;
+	text-shadow: 2px 2px 2px #000; 
 }
 
 .col-left {
