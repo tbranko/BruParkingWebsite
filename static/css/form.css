@@ -1,0 +1,34 @@
+.lang-form {
+	width: 200px;
+	margin-right: auto;
+	margin-left: 332px;
+	padding-top: 10px;
+}
+
+.lang-button {
+	width: 150px;
+	margin: 10px 0 0 0;
+}
+
+.home-input {
+	width: 250px;
+	height: 32px;
+}
+
+.btn-default {
+	color: white;
+	background: #707070;
+}
+
+.lang-bar {
+	margin-left:auto;
+	margin-right:auto;
+	width: 100%;
+	max-width: 460px;
+}
+
+.form-error {
+	text-align: left;
+	padding-left: 128px;
+	color: #b94a48;
+}

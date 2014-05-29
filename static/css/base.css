@@ -1,111 +1,73 @@
-body { 
-  background: url('/static/images/map_v2_dark_blur_resize.jpg') no-repeat center fixed; 
-  background-color: rgba(245, 245, 245, 0.9);
-  /*-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
+@import url("/static/css/form.css");
+@import url("/static/css/fonts.css");
+@import url("/static/css/header-footer.css");
+
+body {
+	background-color: rgba(255, 255, 255, 1);
+	min-height: 723px;
+
+}
+
+p { 
+	color: white;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.container {
+	background: url('/static/images/map_v4_dark_7comp.jpeg') no-repeat center;
+	display: block;
 }
 
 .center {
-	margin-left:auto;
-	margin-right:auto;
+	margin-top: 0px;
 	width: 100%;
-	max-width: 600px;
+	min-width: 640px;
+	max-width: 1920px;
+	background-color: rgb(40, 40, 40);
+	text-align:center;
 }
 
-.home-input {
-	width: 250px;
-	height: 32px;
+.group-well {
+	display:inline-block;
 }
 
 /* @Override for Bootstrap class called well */
 .well {
 	background-color: rgba(245, 245, 245, 0.4);
 	text-align: center;
+	max-width:600px;
 	margin-top:50px;
-}
-
-.font-flamenco {
-	font-family: 'Flamenco', cursive;
-	font-size: 30px;
-}
-
-.font-josefin-sans {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: xx-large;
-}
-
-.font-carrois-gothic {
-	font-family: 'Carrois Gothic', sans-serif;
-	font-size: 40px;
-}
-
-p { 
-	color: white;
-	text-shadow: 2px 2px 2px #000; 
-}
-
-.col-left {
-	max-width: 600px;
-	min-width: 300px;
-}
-
-.col-right {
-	max-width: 600px;
-	min-width: 100px;
-}
-
-.lang-form {
-	width: 200px;
-	margin-right: auto;
-	margin-left: 332px;
-	padding-top: 10px;
-}
-
-.lang-button {
-	width: 150px;
-	margin: 10px 0 0 0;
-}
-
-.bar {
-	display: block;
-	background: #282828;
-	width: 100%;
-}
-
-.header {
-	height:57px;
-}
-
-.footer {
-	position:absolute;
-	bottom:0;
-	height:50px;
-}
-
-.footer-text {
-	color: white;
-	font-family: Helvetica, sans-serif;
-	font-size: 12px;
-	text-align: right;
-	padding: 15px 10px 0px 0px;
-}
-
-.btn-default {
-	color: white;
-	background: #707070;
-}
-
-.lang-bar {
 	margin-left:auto;
 	margin-right:auto;
-	width: 100%;
-	max-width: 460px;
 }
 
-.form-error {
-	text-align: left;
-	padding-left: 128px;
-	color: #b94a48;
+
+.phones {
+	z-index:10;
+	height: 400px; 
+	width: 350px;
+	margin-top:300px;
+	display: inline-block;
+	position:absolute;
+}
+
+.nexus {
+	background-image: url('/static/images/nexus_app_flat_crop.png');
+	background-repeat:no-repeat;
+	margin-left:20px;
+	left:0;
+	bottom:45px;
+}
+
+.iphone {
+	background-image: url('/static/images/iphone_app_flat_crop.png');
+	background-repeat:no-repeat;
+	right:20px;
+	position:absolute;
+	bottom:49px;
+}
+
+/*Hide phones from screen if size <= XY px*/
+@media all and (max-width:1335px) {
+	.phones {display:none;}
 }

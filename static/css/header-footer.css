@@ -1,0 +1,30 @@
+.bar {
+	display: block;
+	background: #FFFFFF;
+	width: 100%;
+}
+
+.header {
+	height:57px;
+}
+
+.footer {
+	position:absolute;
+	bottom:0;
+	height:50px;
+	border-style:solid;
+	border-top:1 #000000;
+	border-left:none;
+	border-bottom:none;
+	border-right:none;
+	
+}
+
+.footer-text {
+	color: black;
+	text-shadow: none;
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	padding: 15px 10px 0px 0px;
+}
