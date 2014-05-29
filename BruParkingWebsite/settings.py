@@ -26,7 +26,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['bruparking.be','bruparking.com']
+ALLOWED_HOSTS = ['bruparking.be','bruparking.com','172.31.10.136']
 
 # Application definition
 
