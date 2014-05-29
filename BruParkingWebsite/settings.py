@@ -26,8 +26,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['bruparking.be','bruparking.com']
 
 # Application definition
 
@@ -73,6 +72,8 @@ DATABASES = {
         },
     }
 }
+
+CONN_MAX_AGE = 3600
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
