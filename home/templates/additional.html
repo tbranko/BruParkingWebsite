@@ -1,0 +1,12 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+<div class="additional">
+	{% if LANGUAGE_CODE == 'en' %}
+		<div class="fb-like" data-href="https://www.facebook.com/BruParking" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+	{% elif LANGUAGE_CODE == 'fr' %}
+		<div class="fb-like" data-href="https://www.facebook.com/BruParkingFR" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+	{% elif LANGUAGE_CODE == 'nl' %}
+		<div class="fb-like" data-href="https://www.facebook.com/BruParkingNL" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+{% endif %}
+</div>

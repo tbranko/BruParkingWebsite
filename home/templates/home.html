@@ -7,26 +7,26 @@
 	
 	<div class="group-well">
 		<div class="well">
-				<p class="font-carrois-gothic">{% trans "Your personal parking assistant for city of Brussels" %}</p>
-				<p class="font-carrois-gothic">{% trans "Comming soon to Android and iPhone" %}</p>
-			</div>
-			<div class="well">
-				<p class="font-carrois-gothic">{% trans "Enter your email to get notified when this app is available" %}</p>
-				<form method="post" action="." class="form-inline">
-					{% csrf_token %}
-					
-					<div class="form-group {% if form.email.errors %}has-error{% endif %}">
-					<p class="form-error">{{ form.email.errors.as_text }}</p>
-					
-					{{ form.email }}
-						<input type="submit" class="btn btn-primary btn-small" value="Send" />
-					</div>
-				</form>
-			</div>
+			<p class="font-carrois-gothic">{% trans "Your personal parking assistant for city of Brussels" %}</p>
+			<p class="font-carrois-gothic">{% trans "Comming soon to Android and iPhone" %}</p>
 		</div>
-	
-	<div class="phones iphone col-right">
+		<div class="well">
+			<p class="font-carrois-gothic">{% trans "Enter your email to get notified when this app is available" %}</p>
+			<form method="post" action="." class="form-inline">
+				{% csrf_token %}
+				
+				<div class="form-group {% if form.email.errors %}has-error{% endif %}">
+				<p class="form-error">{{ form.email.errors.as_text }}</p>
+				
+				{{ form.email }}
+					<input type="submit" class="btn btn-primary btn-small" value="Send" />
+				</div>
+			</form>
+		</div>
 	</div>
 
+	<div class="phones iphone col-right"></div>
+
 {% endblock content %}
+
 

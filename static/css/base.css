@@ -45,6 +45,13 @@ p {
 	margin-right:auto;
 }
 
+.additional {
+	text-align: right;
+	min-width: 400px;
+	max-width: 600px;
+	margin: auto;
+	padding-top: 20px;
+}
 
 .phones {
 	z-index:10;
