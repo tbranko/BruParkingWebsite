@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-02 23:00+0200\n"
+"POT-Creation-Date: 2014-06-06 11:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: templates/home.html:6 templates/thank_you.html:6
+#: templates/home.html:10 templates/thank_you.html:6
 msgid "Your personal parking assistant for city of Brussels"
 msgstr ""
 
-#: templates/home.html:7 templates/thank_you.html:7
+#: templates/home.html:11 templates/thank_you.html:7
 msgid "Comming soon to Android and iPhone"
 msgstr ""
 
-#: templates/home.html:10
+#: templates/home.html:14
 msgid "Enter your email to get notified when this app is available"
 msgstr ""
 

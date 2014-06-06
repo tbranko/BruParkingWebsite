@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-02 23:00+0200\n"
+"POT-Creation-Date: 2014-06-06 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/home.html:6 templates/thank_you.html:6
+#: templates/home.html:10 templates/thank_you.html:6
 msgid "Your personal parking assistant for city of Brussels"
 msgstr "Uw persoonlijke parkeerplaats assistent voor Brussel"
 
-#: templates/home.html:7 templates/thank_you.html:7
+#: templates/home.html:11 templates/thank_you.html:7
 msgid "Comming soon to Android and iPhone"
 msgstr "Binnenkort op Android en iPhone"
 
-#: templates/home.html:10
+#: templates/home.html:14
 msgid "Enter your email to get notified when this app is available"
 msgstr "Vul uw email in om melding wanneer deze app is beschikbaar"
 
 #: templates/thank_you.html:10
 #, fuzzy
 msgid "Thank you, you will be notified as soon as the application is available"
-msgstr "Vul uw email in om melding wanneer deze app is beschikbaar"
+msgstr "Bedankt, we zullen u informeren toen de app beschikbaar wordt"
+

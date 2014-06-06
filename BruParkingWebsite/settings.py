@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+SITE_ID = 1
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -32,11 +33,13 @@ ALLOWED_HOSTS = ['bruparking.be','bruparking.com','172.31.10.136']
 
 INSTALLED_APPS = (
     'django.contrib.admin',
+    'django.contrib.sites',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'home',
 )
 
@@ -56,7 +59,6 @@ X_FRAME_OPTIONS = 'GO FOR IT'
 ROOT_URLCONF = 'BruParkingWebsite.urls'
 
 WSGI_APPLICATION = 'BruParkingWebsite.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
@@ -78,7 +80,7 @@ CONN_MAX_AGE = 3600
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'be-nl'
+LANGUAGE_CODE = 'be-fr'
 
 ugettext = lambda s: s
 LANGUAGES = (
@@ -103,4 +105,9 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     BASE_DIR + "/static",
+)
+
+TEMPLATE_LOADERS = (
+	'django.template.loaders.filesystem.Loader',
+	'django.template.loaders.app_directories.Loader',
 )

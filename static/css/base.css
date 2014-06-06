@@ -2,6 +2,10 @@
 @import url("/static/css/fonts.css");
 @import url("/static/css/header-footer.css");
 
+html {
+	height:100%;
+}
+
 body {
 	background-color: rgba(255, 255, 255, 1);
 	min-height: 723px;
