@@ -19,9 +19,10 @@ sitemaps = {
 urlpatterns = patterns('',
 	url(r'i18n/', include('django.conf.urls.i18n')),
 	url(r'favicon\.ico$', RedirectView.as_view(url='/static/images/favicon.ico')),
-	#url(r'^/sitemap\.xml$', RedirectView.as_view(url='/sitemap.xml')),
+	url(r'^/sitemap\.xml$', RedirectView.as_view(url='/sitemap.xml')),
+	# Serve sitemap.xml in static way, for now
 	#url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
-	(r'^/sitemap\.xml$', TemplateView.as_view(template_name="sitemap.xml")),
+
 )
 
 urlpatterns += i18n_patterns('',
